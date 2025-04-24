@@ -1,0 +1,24 @@
+{
+  "name": "ait-tui",
+  "version": "1.0.0",
+  "description": "A Terminal User Interface built with Ink",
+  "main": "dist/cli.js",
+  "bin": "dist/cli.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node --loader ts-node/esm src/cli.tsx",
+    "dev": "node --loader ts-node/esm src/cli.tsx"
+  },
+  "keywords": ["cli", "ink", "tui"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ink": "^4.1.0",
+    "react": "^18.2.0",
+    "@types/react": "^18.0.0",
+    "typescript": "^4.9.0",
+    "@types/node": "^16.0.0",
+    "ts-node": "^10.9.1"
+  }
+}
