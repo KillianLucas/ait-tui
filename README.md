@@ -1,7 +1,5 @@
 # AIT TUI
 
-A Terminal User Interface built with Ink and React.
-
 ## Installation
 
 ```bash
@@ -11,20 +9,6 @@ npm install
 # Build the project
 npm run build
 
-# Run the application
-npm start
+# Run the application with tmux
+tmux kill-session -t app 2>/dev/null; tmux new -ds app -f /dev/null 'npm run start'; tmux set-option -t app status off; tmux attach -t app
 ```
-
-## Development
-
-To run the application in development mode with hot reloading:
-
-```bash
-npm run dev
-```
-
-## Project Structure
-
-- `src/App.tsx`: Main application component
-- `src/cli.tsx`: CLI entry point
-- `dist/`: Compiled JavaScript output 
